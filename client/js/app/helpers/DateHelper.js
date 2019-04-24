@@ -5,9 +5,9 @@ class DateHelper {
     }
 
     static dataParaTexto(data) {
-        return data.getDate()
-            + '/' + (data.getMonth() + 1)
-            + '/' + data.getFullYear()
+        // let data = new Date(this._inputData.value.split('-'));
+        // let data = new Date(this._inputData.value.replace(/-/g, ','));
+        return `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`;
     }
 
     static textoParaData(texto) {
